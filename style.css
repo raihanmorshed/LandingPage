@@ -1,3 +1,4 @@
+/*  * means covering the whole page */
 * {
   margin: 0;
   padding: 0;
@@ -9,4 +10,41 @@
   background-image: url("https://i.ibb.co/HNvHSyV/image-header.jpg ");
   background-position: center bottom;
   background-size: cover;
+}
+
+.header {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.menu {
+  display: flex;
+  font-size: 20px;
+  color: white;
+  align-items: center;
+}
+
+/* padding = space within/inside the div
+margin = space outside the div 
+span is targeting the span elements inside the class*/
+
+.menu span {
+  margin-right: 30px;
+}
+
+.contact {
+  background-color: white;
+  color: black;
+  padding: 4px 15px; /* top/bottom left/right*/
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out; /*for button hover*/
+}
+
+.contact:hover {
+  background-color: antiquewhites;
 }
